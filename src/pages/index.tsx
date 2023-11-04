@@ -16,11 +16,11 @@ export default function Component() {
     )
   }
   return (
-    <>
+    <div className="container mx-auto p-4">
       Not signed in <br />
       <button className="bg-gray-200 p-2" onClick={() => signIn()}>
         Sign in
       </button>
-    </>
+    </div>
   )
 }
