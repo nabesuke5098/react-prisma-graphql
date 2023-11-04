@@ -8,7 +8,7 @@ export default function Component() {
     return (
       <div className="container mx-auto p-4">
         Signed in as {session.user?.email} <br />
-        <button className="p-3 bg-grey-300" onClick={() => signOut()}>
+        <button className="bg-gray-200 p-2" onClick={() => signOut()}>
           Sign out
         </button>
         <TodoList />
@@ -18,7 +18,7 @@ export default function Component() {
   return (
     <>
       Not signed in <br />
-      <button className="p-3 bg-grey-300" onClick={() => signIn()}>
+      <button className="bg-gray-200 p-2" onClick={() => signIn()}>
         Sign in
       </button>
     </>

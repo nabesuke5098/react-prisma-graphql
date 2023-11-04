@@ -35,7 +35,10 @@ export const TodoList: FC = () => {
     await refetch()
   }
 
-  const handleChange = async (todoId, completed): Promise<void> => {
+  const handleChange = async (
+    todoId: string,
+    completed: boolean
+  ): Promise<void> => {
     const { data } = await updateTodoMutation({
       variables: { todoId, completed },
     })
