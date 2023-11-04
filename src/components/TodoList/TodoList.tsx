@@ -68,7 +68,7 @@ export const TodoList: FC = () => {
           value={todoTitle}
           onChange={(e) => setTodoTitle(e.target.value)}
         />
-        <button className="bg-gray-200 p-2">追加</button>
+        <button className="bg-gray-300 p-2">追加</button>
       </form>
       <ul className="mt-5">
         {todos.map((todo) => {
