@@ -2,10 +2,12 @@ type User {
   id: ID
   name: String
   email: String
+  role: String
 }
 
 fragment UserFragment on User {
   id
   name
   email
+  role
 }
